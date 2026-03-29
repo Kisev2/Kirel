@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="intro-overlay" id="intro-overlay">
+    <div class="intro-content">
+      <div class="intro-logo">
+        <img class="intro-img" src="png/intro.png" alt="Kirel" width="400" />
+        <div class="intro-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <a class="site-header__logo" href="#top">Kirel Unit</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__link" href="#members">Members</a>
+      <div class="nav__social-wrap">
+        <a class="nav__social" href="https://discord.gg/F8gjdXUCNq" target="_blank" rel="noopener noreferrer"
+          aria-label="Discord">
+          <svg class="nav__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor"
+              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+          </svg>
+        </a>
+        <a class="nav__social" href="https://www.instagram.com/kirel_collective/" target="_blank"
+          rel="noopener noreferrer" aria-label="Instagram">
+          <svg class="nav__icon nav__icon--instagram" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.75"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.75" />
+            <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a class="nav__social" href="https://www.tiktok.com/@kirel_unit" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok">
+          <svg class="nav__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor"
+              d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__video" aria-hidden="true">
+        <video class="hero__video-media" autoplay muted loop playsinline>
+          <source src="assets/bg.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__shade"></div>
+      </div>
+
+      <div class="hero__content">
+        <img class="hero__logo-img" src="png/kirel-logo.png" width="1400" height="600" alt="Kirel" />
+        <a class="hero__scroll" href="#about">Scroll</a>
+      </div>
+    </section>
+
+    <div class="below-hero">
+      <section class="panel" id="about">
+        <h2>About</h2>
+        <p>
+          Kirel founded by KISE is a creative Team focused on visual storytelling and digital artistry.
+        </p>
+      </section>
+
+
+      <section class="members-edits" id="members">
+        <div class="members-edits__header">
+          <h2>Members Edits</h2>
+          <p>Immersive previews of our members edits.</p>
+        </div>
+
+        <div class="edits-grid">
+          <!-- Item 6 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/Video-by-snwysss.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Snwyss</span>
+                  <h3 class="edit-card__title">The Sun Ain't Gonna Shine (Anymore)</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/oybax.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Triple T</span>
+                  <h3 class="edit-card__title">PPP</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/fixe-vid.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Fixe</span>
+                  <h3 class="edit-card__title">Luxury Elite</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/Babydoll.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Ukn.vfx</span>
+                  <h3 class="edit-card__title">Babydoll</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/cyarilz.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Cyarilz</span>
+                  <h3 class="edit-card__title">Something has to change</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/yuuta.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Yuuta</span>
+                  <h3 class="edit-card__title">ヨルシカ - 又三郎</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 8 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/kae.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">kae</span>
+                  <h3 class="edit-card__title">Jane!</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 9 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/kaizen.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Kaiizen</span>
+                  <h3 class="edit-card__title">Worry</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 10 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/phyte.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Phyte</span>
+                  <h3 class="edit-card__title">cops & robbers</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="edit-card">
+            <div class="edit-card__visual">
+              <video class="edit-card__video" loop muted playsinline preload="auto">
+                <source src="assets/HENYOU.mp4" type="video/mp4">
+              </video>
+              <div class="edit-card__overlay">
+                <div class="edit-card__info">
+                  <span class="edit-card__member">Qores</span>
+                  <h3 class="edit-card__title">Henyou</h3>
+                </div>
+                <div class="edit-card__visualizer">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel--tight" id="contact">
+        <h2>Thank you for visiting</h2>
+        <p><a href="https://discord.gg/F8gjdXUCNq">Feel free to join us in discord!</a></p>
+      </section>
+
+      <footer class="site-footer">
+        <span>Kirel</span>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
