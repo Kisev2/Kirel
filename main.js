@@ -183,4 +183,31 @@
       }
     });
   });
+
+  // ── Swipe handler (Mobile) ────────────────────────────────────────────────
+  if (grid && isTouch()) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    grid.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    grid.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+      
+      if (Math.abs(diff) > 50) { // Threshold for swipe
+        if (diff < 0) {
+          // Swipe left -> Next card (right)
+          updateCarousel((activeIndex + 1) % editCards.length);
+          playCard(editCards[activeIndex]);
+        } else {
+          // Swipe right -> Previous card (left)
+          updateCarousel((activeIndex - 1 + editCards.length) % editCards.length);
+          playCard(editCards[activeIndex]);
+        }
+      }
+    }, {passive: true});
+  }
 })();

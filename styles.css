@@ -741,6 +741,16 @@ body.is-ready .site-header {
     gap: 0.15rem;
   }
 
+  /* Fix vertical alignment for KIREL UNIT and Members */
+  :root {
+    --header-logo-nudge-y: 0px;
+  }
+
+  /* Center the intro on mobile */
+  .intro-overlay {
+    --intro-logo-x: 0px;
+  }
+
   .nav__social {
     width: 2.35rem;
     height: 2.35rem;
