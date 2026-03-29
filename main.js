@@ -1,4 +1,10 @@
 (function () {
+  // Prevent browser from restoring scroll position on reload
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
   // ── Intro Animation ───────────────────────────────────────────────────────
   const introOverlay = document.getElementById("intro-overlay");
   const body = document.body;
